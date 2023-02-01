@@ -79,3 +79,5 @@ Al termine dell’addestramento si è proceduto con la fase di test.
 In questa sezione andremo a riportare i risultati ottenuti dall’addestramento dei 4 modelli, divisi per epoche 
 e per emozioni. Iniziamo con il modello che classifica quattro emozioni, addestrato per 4 epoche. Riportiamo 
 le statistiche legate all’addestramento.
+
+Ulteriori dettagli relativi alle analisi effettuate sono riportati nella seguente [relazione](https://github.com/ChiaraAmalia/ProgettoBert/blob/main/Relazione_Bert.pdf)
