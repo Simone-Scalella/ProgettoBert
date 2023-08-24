@@ -39,6 +39,7 @@ Il tokenizer sfruttando il modello già allenato è in grado di dividere in toke
 Inoltre, per rendere i dati compatibili con il tipo di dati accettati in ingresso da BERT ad ogni input vengono assegnati dei token “speciali”, che sono i token [SEP] e [CLS]:
 
  • [SEP] è un token che se vengono date più frasi in input le separa (ID: 102);
+ 
  • [CLS] è un token che va sempre messo all’inizio della frase e specifica che quello che si sta affrontando è un task di classificazione (ID:101).
  
 Entrambi i token sono sempre richiesti, anche se la frase in input è una sola (in questo caso [SEP] verrà messo alla fine della frase).
@@ -47,10 +48,14 @@ Sfruttando la funzione encode_plus() facciamo l’encoding di tutte le frasi aff
 Quello che questa funzione fa è:
 
  • Tokenizzare la frase;
+ 
  • Aggiungere i token speciali (ovvero aggiunge i token [SEP] e [CLS]);
+ 
  • Mappare i token con il loro ID;
+ 
  • Esegue il padding (ovvero allunga aggiungendo 0) o tronca la frase affinché la sua lunghezza sia pari 
 a max_length;
+
  • Creare le attention mask (distinzione tra parole effettive della frase e padding).
 
 
