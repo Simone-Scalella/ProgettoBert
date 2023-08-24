@@ -61,15 +61,9 @@ a max_length;
 
 Ed infine si procederà a trasformare la lista relativa agli input, la lista relativa alle attention mask e la lista relativa alle label in tensori; a questo punto i nostri dati sono pronti per essere dati in input al modello BERT.
 ## Realizzazione del modello
-Al fine di eseguire il fine tuning si è diviso il dataset in training set e validation set.
-Come prima cosa sfruttando la funzione TensorDataset metto insieme i tre 
-tensori, relativi agli input, alle attention mask e alle label, ottenuti con le elaborazioni viste prima.
-Poi dopo aver definito la dimensione che dovranno avere il training set (80% del dataset) e il validation set (20%) tramite la funzione random_split() vengono creati di due dataset.
-Successivamente abbiamo settato i parametri del modello. Per quanto ri-
-guarda questi ci sono dei valori “classici” da utilizzare, ma in realtà il modo migliore per selezionarli sarebbe quello di sperimentarli e visionare quale dia il miglior risultato.
-Nel nostro progetto, ad esempio, in un primo momento avevamo allenato il modello su 4 epoche, ma vedendo che andava in questo modo in overfitting abbiamo deciso di ridurre il numero delle epoche a 2.
-Per caricare i dati sul modello di BERT, dobbiamo utilizzare la classe DataLoader; quindi, creiamo due oggetti DataLoader a cui passeremo rispettivamente il training set e il validation set.
-Ed infine procediamo nella creazione del modello, per fare ciò si andrà a riprendere il modello pre-allenato.
+Al fine di eseguire il fine tuning si è diviso il dataset in training set e validation set. Come prima cosa sfruttando la funzione TensorDataset metto insieme i tre tensori, relativi agli input, alle attention mask e alle label, ottenuti con le elaborazioni viste prima. Poi dopo aver definito la dimensione che dovranno avere il training set (80% del dataset) e il validation set (20%) tramite la funzione random_split() vengono creati di due dataset. Successivamente abbiamo settato i parametri del modello.
+
+Per quanto ri-guarda questi ci sono dei valori “classici” da utilizzare, ma in realtà il modo migliore per selezionarli sarebbe quello di sperimentarli e visionare quale dia il miglior risultato. Nel nostro progetto, ad esempio, in un primo momento avevamo allenato il modello su 4 epoche, ma vedendo che andava in questo modo in overfitting abbiamo deciso di ridurre il numero delle epoche a 2. Per caricare i dati sul modello di BERT, dobbiamo utilizzare la classe DataLoader; quindi, creiamo due oggetti DataLoader a cui passeremo rispettivamente il training set e il validation set. Ed infine procediamo nella creazione del modello, per fare ciò si andrà a riprendere il modello pre-allenato.
 
 Ora dobbiamo procedere nell’allenamento e nella valutazione dei risultati ottenuti.
 ## Addestramento
