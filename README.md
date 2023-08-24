@@ -80,4 +80,10 @@ In questa sezione andremo a riportare i risultati ottenuti dall’addestramento 
 e per emozioni. Iniziamo con il modello che classifica quattro emozioni, addestrato per 4 epoche. Riportiamo 
 le statistiche legate all’addestramento.
 
-Ulteriori dettagli relativi alle analisi effettuate sono riportati nella seguente [relazione](https://github.com/ChiaraAmalia/ProgettoBert/blob/main/Relazione_Bert.pdf)
+Ulteriori dettagli relativi alle analisi effettuate sono riportati nella seguente [relazione](https://github.com/Simone-Scalella/ProgettoBert/blob/main/Relazione_Bert.pdf)
+
+## Autori
+* Caporusso Chiara Amalia: [Github](https://github.com/ChiaraAmalia)
+* Galeazzi Margherita: [Github](https://github.com/MargheritaGaleazzi)
+* Zhang Yihang: [Github](https://github.com/Accout-Personal)
+* Scalella Simone: [Github](https://github.com/Simone-Scalella)
