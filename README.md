@@ -65,6 +65,7 @@ Al fine di eseguire il fine tuning si è diviso il dataset in training set e val
 Successivamente abbiamo settato i parametri del modello.<br />
 Per quanto riguarda i parametri del modello ci sono dei valori “classici” da utilizzare, ma in realtà il modo migliore per selezionarli sarebbe quello di sperimentarli e visionare quale dia il miglior risultato. 
 <br />
+<br />
 Nel nostro progetto, ad esempio, in un primo momento avevamo allenato il modello su 4 epoche, ma vedendo che andava in questo modo in overfitting abbiamo deciso di ridurre il numero delle epoche a 2. Per caricare i dati sul modello di BERT, dobbiamo utilizzare la classe DataLoader; quindi, creiamo due oggetti DataLoader a cui passeremo rispettivamente il training set e il validation set. Ed infine procediamo nella creazione del modello, per fare ciò si andrà a riprendere il modello pre-allenato.
 
 Ora dobbiamo procedere nell’allenamento e nella valutazione dei risultati ottenuti.
